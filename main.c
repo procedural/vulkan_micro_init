@@ -1,9 +1,9 @@
 #if 0
 #!/bin/sh
-cc main.c /usr/lib/x86_64-linux-gnu/libvulkan.so.1
-./a.out
+cc main.c ~/.steam/ubuntu12_32/steam-runtime/usr/lib/x86_64-linux-gnu/libvulkan.so.1
+LD_LIBRARY_PATH=~/.steam/ubuntu12_32/steam-runtime/usr/lib/x86_64-linux-gnu ./a.out
 echo $?
-exit 0
+exit
 #endif
 
 unsigned vkCreateInstance(void * createInfo, void * allocator, void * outInstance);
